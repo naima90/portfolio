@@ -4,30 +4,162 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naima Osman</title>
+    <title>Naima's Portfolio</title>
+
+      <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+            integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+            crossorigin="anonymous"></script>
+
+        <!-- css stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fontawesome -->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+    </head>
 </head>
 <body>
 
     <!-- navbar -->
-    <section id="navbar"></section>
+    <section class="colored-section" id="title">
+        <div class="container-fluid">
+
+          <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+               </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>                
 
     <!-- title section -->
-    <section id="title"></section>
+      <div class="row">
+          <div class="col-lg-6"> 
+              <h1>Hello,👋🏽 I'm Naima Osman</h1>
+              <p class="title-paragraph">I am an aspiring software developer living in London, I enjoy coding, Iced-coffee and travelling.</p>
+              <a class="btn btn-outline-primary btn-lg learn-btn" href="#about" role="button">Learn more</a>
+            </div>
+      </div>
+
+    </div>
+    </section>
 
     <!-- about me section -->
-    <section id="about"></section>
 
-    <!-- projects section -->
-    <section id="projects"></section>
+    <section id="about">
+        <div class="container-fluid">
+            <h1 class="about-heading">About Me </h1>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>I have been learning how to code for the past few months and now I am at a point where I can build multipage websites
+                    with HTML and CSS. I have also been building projects in JavaScript and I have enjoyed learning about JavaScript,
+                    functional programming and object-oriented programming.
+                    Teaching myself how to code hasn’t been an easy journey, However, it’s one of the most rewarding things I have ever
+                    done. My favourite thing about programming is solving problems, prototyping new ideas and seeing my ideas come to live.</p>
+                    <p>I am aware I have a long way to go in order to become a better developer, Therefore I am always looking for ways to
+                    sharpen and enhance my technical skills and keep up with this fast growing industry.
+                    I would like to learn more programming languages, backend technologies and Testing frameworks such as RSpec, Jest. I
+                    would also like to build on my knowledge of Data base management systems and Best practice software development and
+                    CI/CD methodologies. Check out what I have been learning on freecodecamp
+                    <a href="https://www.freecodecamp.org/naima0" class="btn btn-outline-primary btn-sm learn-btn" role="button">here</a></p>        
+                </div>
+                <div class="col-lg-6">
+                    <img class="title-img" src="/images/tree-img.jpg" style="height:670px; width:700px" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- skills section -->
-    <section id="skills"></section>
+    <section id="skills">
+        <h2 class="skills-heading">My Stack</h2>
+        <div>
+        <img class="skills-logo" src="images/html-5.png" alt="">
+        <img class="skills-logo" src="/images/css.png" alt="">
+        <img class="skills-logo" src="/images/js.png" alt="">
+        <img class="skills-logo" src="images/react-logo.png" style="height: 128px; width: 120px;" alt="">
+        <img class="skills-logo" src="images/git-logo.png" alt="">
+        <img class="skills-logo" src="images/github.png" style="height: 128px; width: 120px;" alt="">
+        <img class="skills-logo" src="images/firebase.png" style="height: 128px; width: 128px;" alt="">
+
+    </div>
+    </section>
+
 
     <!-- contact section -->
-    <section id="contact"></section>
+    <section id="contact">
+        <h1 class="contact-heading">CONTACT ME</h1>
+        <div class="row">
+            <div class="col-lg">    
+                
+                <div class="contact-wrapper">
+                    
+                    <form id="contact-form" role="form">
+                        
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" id="name" placeholder="NAME.." name="name" value="" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="email" class="form-control" id="email" placeholder="EMAIL.." name="email" value="" required>
+                            </div>
+                        </div>
+                        
+                        <textarea class="form-control" rows="10" placeholder="MESSAGE..." name="message" required></textarea>
+                        
+                        <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                            <div class="button">
+                                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                            </div>
+                            
+                        </button>
+                        
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- footer section -->
-    <section id="footer"></section>
-    
+    <section id="footer">
+        <div>
+            <i class="fab fa-twitter footer-icon"></i>
+            <i class="fab fa-facebook-f footer-icon"></i>
+            <i class="fab fa-instagram footer-icon"></i>
+            <i class="fas fa-envelope footer-icon"></i>
+            <p>© Copyright 2021</p>
+        </div>
+
+    </section>
+<script src="app.js"></script>
 </body>
 </html>
