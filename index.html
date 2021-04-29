@@ -20,6 +20,9 @@
             crossorigin="anonymous"></script>
 
         <!-- css stylesheet -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap" 
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <!-- fontawesome -->
@@ -29,7 +32,7 @@
 <body>
 
     <!-- navbar -->
-    <section class="colored-section" id="title">
+    <section id="title" class="colored-section">
         <div class="container-fluid">
 
           <nav class="navbar navbar-expand-lg navbar-dark">
@@ -59,8 +62,8 @@
 
     <!-- title section -->
       <div class="row">
-          <div class="col-lg-6"> 
-              <h1>Hello,👋🏽 I'm Naima Osman</h1>
+          <div class="col-lg-6 title-section"> 
+              <h1 class="big-heading">Hello,👋🏽 I'm Naima Osman</h1>
               <p class="title-paragraph">I am an aspiring software developer living in London, I enjoy coding, Iced-coffee and travelling.</p>
               <a class="btn btn-outline-primary btn-lg learn-btn" href="#about" role="button">Learn more</a>
             </div>
@@ -72,24 +75,21 @@
     <!-- about me section -->
 
     <section id="about">
-        <div class="container-fluid">
-            <h1 class="about-heading">About Me </h1>
-            <div class="row">
-                <div class="col-lg-6">
+        <div class="container-fluid about-section">
+            <h1 class="big-heading">About Me </h1>
+            <div>
+                <div class="about-paragraph">
                     <p>I have been learning how to code for the past few months and now I am at a point where I can build multipage websites
                     with HTML and CSS. I have also been building projects in JavaScript and I have enjoyed learning about JavaScript,
                     functional programming and object-oriented programming.
                     Teaching myself how to code hasn’t been an easy journey, However, it’s one of the most rewarding things I have ever
                     done. My favourite thing about programming is solving problems, prototyping new ideas and seeing my ideas come to live.</p>
+                    <hr>
                     <p>I am aware I have a long way to go in order to become a better developer, Therefore I am always looking for ways to
                     sharpen and enhance my technical skills and keep up with this fast growing industry.
                     I would like to learn more programming languages, backend technologies and Testing frameworks such as RSpec, Jest. I
                     would also like to build on my knowledge of Data base management systems and Best practice software development and
-                    CI/CD methodologies. Check out what I have been learning on freecodecamp
-                    <a href="https://www.freecodecamp.org/naima0" class="btn btn-outline-primary btn-sm learn-btn" role="button">here</a></p>        
-                </div>
-                <div class="col-lg-6">
-                    <img class="title-img" src="/images/tree-img.jpg" style="height:670px; width:700px" alt="">
+                    CI/CD methodologies. Check out what I have been learning on freecodecamp<a class="btn btn-primary btn-sm" href="https://www.freecodecamp.org/naima0" role="button">here.</a></p>        
                 </div>
             </div>
         </div>
@@ -97,61 +97,55 @@
 
     <!-- skills section -->
     <section id="skills">
-        <h2 class="skills-heading">My Stack</h2>
-        <div>
-        <img class="skills-logo" src="images/html-5.png" alt="">
-        <img class="skills-logo" src="/images/css.png" alt="">
-        <img class="skills-logo" src="/images/js.png" alt="">
-        <img class="skills-logo" src="images/react-logo.png" style="height: 128px; width: 120px;" alt="">
+        <h1 class="big-heading">My Stack</h1>
+        <div class="logos">
+        <img class="skills-logo" src="images/html-logo.png" alt="">
+        <img class="skills-logo" src="/images/css-logo.png" alt="">
+        <img class="skills-logo" src="/images/js-logo.png" alt="">
+        <img class="skills-logo" src="/images/jquery-logo.png" alt="">
+        <img class="skills-logo" src="/images/bootstrap-logo.png" alt="">
+        <img class="skills-logo" src="images/react-logo.png" alt="">
         <img class="skills-logo" src="images/git-logo.png" alt="">
-        <img class="skills-logo" src="images/github.png" style="height: 128px; width: 120px;" alt="">
-        <img class="skills-logo" src="images/firebase.png" style="height: 128px; width: 128px;" alt="">
-
+        <img class="skills-logo" src="images/github-logo.png" alt="">
+        <img class="skills-logo" src="images/firebase-logo.png" alt="">
+        <img class="skills-logo" src="images/figma-log.png" alt="">
+        
     </div>
     </section>
 
 
     <!-- contact section -->
     <section id="contact">
-        <h1 class="contact-heading">CONTACT ME</h1>
-        <div class="row">
-            <div class="col-lg">    
-                
-                <div class="contact-wrapper">
+        
+        <div class="container-fluid">
+            <h1 class="big-heading">CONTACT ME</h1>
                     
-                    <form id="contact-form" role="form">
-                        
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <input type="text" class="form-control" id="name" placeholder="NAME.." name="name" value="" required>
-                            </div>
+                <form id="contact-form" class="col-lg-8 col-md-10" role="form">     
+                    <div class="form-group">
+                        <div>
+                            <input type="text" class="form-control" id="name" placeholder="NAME.." name="name" value="" required>
                         </div>
-                        
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <input type="email" class="form-control" id="email" placeholder="EMAIL.." name="email" value="" required>
-                            </div>
+                    </div>      
+                    <div class="form-group">
+                        <div>
+                            <input type="email" class="form-control" id="email" placeholder="EMAIL.." name="email" value="" required>
                         </div>
+                     </div>           
+                    <textarea class="form-control" rows="10" placeholder="MESSAGE..." name="message" required></textarea>
                         
-                        <textarea class="form-control" rows="10" placeholder="MESSAGE..." name="message" required></textarea>
-                        
-                        <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                            <div class="button">
-                                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-                            </div>
-                            
-                        </button>
-                        
-                    </form>
+                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                        <div class="button">
+                            <i class="fa fa-paper-plane"></i><a class="send-text" href="mailto:naimaosman203@gmail.com?subject=?Body-goes-here">SEND</a>
+                        </div>     
+                    </button>     
+                </form>
                     
-                </div>
-            </div>
-        </div>
+         </div>
     </section>
 
     <!-- footer section -->
     <section id="footer">
-        <div>
+        <div class="container-fluid">
             <i class="fab fa-twitter footer-icon"></i>
             <i class="fab fa-facebook-f footer-icon"></i>
             <i class="fab fa-instagram footer-icon"></i>
